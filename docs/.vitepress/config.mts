@@ -6,8 +6,8 @@ export default defineConfig({
   description: "系统分析师学习笔记",
 
   // github pages 需要设置 base
-  base: '/system-analyst-notebook/',
-  
+  base: '/sa-notebook/',
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
