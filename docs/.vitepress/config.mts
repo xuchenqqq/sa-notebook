@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "system-analyst-notebook",
-  description: "系统分析师学习笔记",
+  title: '系统分析师学习笔记',
+  description: '软考系统分析师知识点汇总与复习指南',
 
   // github pages 需要设置 base
   base: '/sa-notebook/',
@@ -11,16 +11,18 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '首页', link: '/' },
+      { text: '学习指南', link: '/study-guide' },
+      { text: '知识地图', link: '/knowledge-map' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '快速导航',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '首页', link: '/' },
+          { text: '学习指南', link: '/study-guide' },
+          { text: '知识地图', link: '/knowledge-map' }
         ]
       }
     ],
