@@ -22,6 +22,10 @@ npm run docs:preview  # Preview the production build locally
 - `docs/knowledge-map.md` — Dynamically renders a list of all `.md` files under `docs/knowledges/` using `import.meta.glob` at build time. Groups files by their parent directory name and generates links automatically.
 - `docs/knowledges/` — Knowledge notes organized in chapter subdirectories (e.g., `ch1-绪论/`, `ch2-数学与工程基础/`). Add new `.md` files here and they appear on the knowledge map automatically.
 
+## Conventions
+
+- 当用户说"提交"时，意味着同时执行 `git commit` 和 `git push`，不需要再次确认。
+
 ## Deployment
 
 Push to `main` triggers the GitHub Actions workflow in `.github/workflows/deploy.yml`. It builds with `npm run docs:build` and deploys the `docs/.vitepress/dist` artifact to GitHub Pages. The site is served at `https://<user>.github.io/sa-notebook/`.
